@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio de Ajax/jQuery con API Spotify Modularizado</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="container">
+		<a class="logo centered" href="https://www.spotify.com">
+        	<img class="img-responsive" src="imgs/logoSpotify.svg" alt="logotipo Spotify" /></a>
+	    <h1>Search for an Artist</h1>
+	    <p>Type an artist name and click on "Search". Then, click on any album from the results to play 30 seconds of its first track.</p>
+	    <form action="" id="search-form">
+	    	 <fieldset class="form-group">
+	    		<legend>Search Artist</legend>
+	    		<div>
+	    			<label for="search">I want to find...</label>
+					<input type="text" id="search"  class="form-control" />
+	    		</div>
+	    		<button class="btn btn-success">Search!!</button>
+	    	</fieldset>
+	    	<fieldset>
+	    		<legend>Artist</legend>
+	    		<div>
+	    			<select name="" id="artists" class="form-control"></select>
+    			</div>
+	    	</fieldset>
+	    	<fieldset>
+	    		<legend>Albums</legend>
+	    		<div><select name="" id="albums" class="form-control"></select></div>
+	    	</fieldset>
+	    	<fieldset>
+	    		<legend>Tracks</legend>
+	    		<div>
+	    			<div id="selectedAlbum"></div>
+					<ul id="tracks"></ul>
+	    		</div>
+	    	</fieldset>
+	        
+	    </form>
+</div>
+
+	<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<!-- ARTIST -->
+	<script src="artists/search_artists.js"></script>
+	<script src="artists/assemble_artists.js"></script>
+	<!-- ALBUMS -->
+	<script src="albums/search_albums.js"></script>
+	<script src="albums/assemble_albums.js"></script>
+	<!-- TRACKS -->
+	<script src="tracks/search_tracks.js"></script>
+	<script src="tracks/assemble_tracks.js"></script>
+</body>
+</html>

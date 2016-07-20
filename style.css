@@ -1,0 +1,43 @@
+body {
+    padding: 20px;		
+	background: #B3C100;
+}
+.container{
+	padding:30px 15px;
+	max-width: 450px;
+	min-width: 300px;
+	background: rgba(0,0,0,.8);
+	color:beige;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+.logo img{
+	max-width:60%;
+	margin: 0 auto  25px auto;
+}
+
+#search-form, .form-control {
+    margin-bottom: 20px;
+}
+
+legend{
+	color:darkgray;
+}
+p, label{
+	font-weight: 300;
+}
+
+#selectedAblbum{
+	margin-bottom: 15px;
+}
+
+#selectedAlbum img {
+	border: 5px solid white;
+	margin-right: 15px;
+	vertical-align: baseline;
+}
+
+#selectedAlbum h2 {
+	text-decoration: underline;
+}
